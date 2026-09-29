@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân chia hai số</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <!-- Khung nhập số thứ 1 (Đã bỏ value) -->
+        <div class="input-group">
+            <label for="num1">1st Number :</label>
+            <input type="number" id="num1">
+        </div>
+        
+        <!-- Khung nhập số thứ 2 (Đã bỏ value) -->
+        <div class="input-group">
+            <label for="num2">2nd Number:</label>
+            <input type="number" id="num2">
+        </div>
+        
+        <!-- Các nút chức năng -->
+        <div class="button-group">
+            <button onclick="multiply()">Multiply</button>
+            <button onclick="divide()">Divide</button>
+        </div>
+        
+        <!-- Khu vực hiển thị kết quả (Đã để trống số 120) -->
+        <div class="result-group">
+            <p>The Result Is :</p>
+            <p id="resultDisplay"></p>
+        </div>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="/Script/script.js"></script>
+</body>
+</html>

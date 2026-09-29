@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền thực đơn</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <!-- Bảng phía trên: Chọn món ăn -->
+        <table class="menu-table">
+            <tr>
+                <th colspan="3" class="title">THỰC ĐƠN</th>
+            </tr>
+            <tr class="header-row">
+                <th>Thức ăn</th>
+                <th>Nước uống</th>
+                <th>Thời điểm</th>
+            </tr>
+            <tr>
+                <td class="select-col">
+                    <!-- multiple cho phép chọn nhiều mục (giữ phím Ctrl hoặc Shift khi click) -->
+                    <select id="thucAn" multiple size="8">
+                        <option value="Bún bò">Bún bò</option>
+                        <option value="Hủ tiếu">Hủ tiếu</option>
+                        <option value="Bánh canh">Bánh canh</option>
+                        <option value="Phở bò">Phở bò</option>
+                        <option value="Nuôi">Nuôi</option>
+                        <option value="Bánh mì thịt">Bánh mì thịt</option>
+                        <option value="Bánh cuốn">Bánh cuốn</option>
+                    </select>
+                </td>
+                <td class="select-col">
+                    <select id="nuocUong" multiple size="8">
+                        <option value="Cà phê đá">Cà phê đá</option>
+                        <option value="Cà phê sữa">Cà phê sữa đá</option>
+                        <option value="Chanh dây">Chanh dây</option>
+                        <option value="Chanh muối">Chanh muối</option>
+                        <option value="Xí muội">Xí muội</option>
+                        <option value="Sữa tươi">Sữa tươi</option>
+                        <option value="Cam vắt">Cam vắt</option>
+                    </select>
+                </td>
+                <td class="radio-col">
+                    <label><input type="radio" name="thoiDiem" value="ngay" checked> Ban ngày</label><br><br>
+                    <label><input type="radio" name="thoiDiem" value="dem"> Ban đêm</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="btn-row">
+                    <button type="button" onclick="tinhTien()">Tính tiền</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Bảng phía dưới: Hiển thị kết quả hóa đơn (Mặc định để trống) -->
+        <table class="result-table" id="resultTable">
+            <!-- Nội dung hóa đơn sẽ được chèn bằng JavaScript vào đây -->
+        </table>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="/Script/script.js"></script>
+</body>
+</html>

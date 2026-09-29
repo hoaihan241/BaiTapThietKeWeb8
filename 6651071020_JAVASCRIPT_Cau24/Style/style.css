@@ -1,0 +1,55 @@
+/* Định dạng khung bảng */
+.date-table {
+    border: 2px solid #000080; /* Viền xanh đậm */
+    border-collapse: collapse;
+    background-color: #ffcccc; /* Nền hồng nhạt */
+    font-family: "Times New Roman", Times, serif;
+    width: 450px;
+}
+
+/* Viền cho từng ô trong bảng */
+.date-table td {
+    border: 1px solid #000080;
+    padding: 8px;
+}
+
+/* Định dạng khu vực nhập liệu */
+.input-cell {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.input-cell label {
+    margin-right: 5px;
+}
+
+.input-cell input {
+    width: 50px;
+    padding: 2px;
+}
+
+/* Căn giữa nút bấm */
+.center-btn {
+    text-align: center;
+}
+
+/* Tạo hình dáng nút bấm giống hình ảnh minh họa */
+.center-btn button {
+    border-radius: 10px;
+    padding: 3px 15px;
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.center-btn button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Định dạng dòng xuất kết quả */
+.result-cell {
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+}

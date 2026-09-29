@@ -1,0 +1,45 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+}
+
+/* Định dạng bảng */
+table {
+    border-collapse: collapse;
+    background-color: #e6f9d4; /* Màu nền xanh lá nhạt giống hình minh họa */
+}
+
+/* Định dạng các ô trong bảng */
+th, td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Cột tiêu đề in đậm */
+th {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+/* Ô nhập liệu (input) */
+input[type="number"] {
+    width: 140px;
+    padding: 4px;
+    border: 1px solid #999;
+}
+
+/* Định dạng nút Xóa bo tròn */
+button {
+    border-radius: 12px;
+    padding: 3px 15px;
+    border: 1px solid #888;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}

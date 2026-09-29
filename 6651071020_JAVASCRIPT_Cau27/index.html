@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa dòng trong bảng</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Tổng</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dòng 1 -->
+            <tr>
+                <td><input type="number" value="2"></td>
+                <td><input type="number" value="1000000"></td>
+                <td><input type="number" value="2000000"></td>
+                <td><button type="button" onclick="xoaDong(this)">Xóa</button></td>
+            </tr>
+            <!-- Dòng 2 -->
+            <tr>
+                <td><input type="number" value="1"></td>
+                <td><input type="number" value="500000"></td>
+                <td><input type="number" value="500000"></td>
+                <td><button type="button" onclick="xoaDong(this)">Xóa</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="/Script/script.js"></script>
+</body>
+</html>

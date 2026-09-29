@@ -1,0 +1,53 @@
+/* Định dạng tổng thể bảng */
+.salary-table {
+    border: 4px solid #000080; /* Viền ngoài màu xanh đậm */
+    border-collapse: collapse; /* Gộp viền các ô lại với nhau */
+    background-color: #ffcc99; /* Màu nền cam nhạt giống hình */
+    font-family: "Times New Roman", Times, serif; 
+    width: 350px;
+}
+
+/* Định dạng các ô (cell) trong bảng */
+.salary-table td {
+    border: 2px solid #000080; /* Viền trong màu xanh đậm */
+    padding: 6px 10px;
+}
+
+/* Định dạng chữ in đậm cho cột tiêu đề */
+.label {
+    font-weight: bold;
+    font-size: 18px;
+    width: 120px;
+}
+
+/* Định dạng ô nhập liệu */
+.salary-table input {
+    width: 90%;
+    padding: 2px 5px;
+}
+
+/* Căn giữa ô chứa nút bấm */
+.center-btn {
+    text-align: center;
+}
+
+/* Tạo kiểu dáng cho nút bấm giống trong hình */
+.center-btn button {
+    border-radius: 15px; /* Bo tròn viền nút */
+    padding: 3px 15px;
+    border: 2px solid #a0a0a0;
+    background-color: #e6e6e6;
+    color: #3366cc; /* Chữ màu xanh */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.center-btn button:hover {
+    background-color: #cccccc;
+}
+
+/* Nơi hiển thị kết quả */
+.result {
+    font-size: 18px;
+}

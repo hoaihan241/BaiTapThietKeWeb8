@@ -1,0 +1,67 @@
+/* Đặt font chữ chung */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+}
+
+/* Khung viền bao quanh toàn bộ công cụ */
+.container {
+    width: 480px;
+    border: 2px solid #a3e4d7; /* Viền ngoài màu xanh ngọc nhạt */
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Định dạng tiêu đề */
+.header {
+    background-color: #fffde7; /* Nền vàng nhạt */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #a3e4d7;
+}
+
+/* Khu vực chứa các ô nhập và nút bấm */
+.content {
+    background-color: #ccffff; /* Nền xanh dương nhạt */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+/* Định dạng các cột dọc chứa label và input */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column label {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.column input[type="text"] {
+    width: 140px;
+    padding: 4px;
+    border: 1px solid #aaa;
+}
+
+/* Định dạng nút bấm có mũi tên */
+.btn-column {
+    margin-top: 20px; /* Đẩy nút bấm xuống để ngang hàng với ô input */
+}
+
+.btn-column button {
+    border-radius: 12px;
+    padding: 2px 18px;
+    border: 1px solid #777;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace; /* Font chữ cho dấu mũi tên đều hơn */
+}
+
+.btn-column button:hover {
+    background-color: #ddd;
+}

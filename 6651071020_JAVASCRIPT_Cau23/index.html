@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tiền Lương</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+
+    <!-- Sử dụng thẻ form, table, input theo đúng yêu cầu đề bài -->
+    <form>
+        <table class="salary-table">
+            <tr>
+                <td class="label">Lương</td>
+                <td><input type="number" id="luong"></td>
+            </tr>
+            <tr>
+                <td class="label">Hệ số lương</td>
+                <!-- step="0.1" cho phép nhập số thập phân (ví dụ: 3.2) -->
+                <td><input type="number" id="heSo" step="0.1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-btn">
+                    <!-- Nút tính lương gọi hàm JS -->
+                    <button type="button" onclick="tinhLuong()">Tính lương tháng</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Lương tháng</td>
+                <!-- Nơi xuất kết quả -->
+                <td id="ketQua" class="result"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="/Script/script.js"></script>
+</body>
+</html>

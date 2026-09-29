@@ -1,0 +1,59 @@
+/* Đặt font chữ cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Khung viền bao quanh toàn bộ form */
+.calculator-container {
+    border: 1px solid #999;
+    padding: 15px;
+    width: 320px;
+    box-sizing: border-box;
+}
+
+/* Căn chỉnh các hàng nhập liệu */
+.input-group {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Kích thước của nhãn (label) */
+.input-group label {
+    width: 110px;
+    font-size: 14px;
+}
+
+/* Kích thước của ô nhập số */
+.input-group input {
+    width: 170px;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Khu vực chứa 2 nút bấm */
+.button-group {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Định dạng các nút bấm */
+.button-group button {
+    padding: 3px 12px;
+    margin-right: 5px;
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button-group button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Định dạng khu vực hiển thị kết quả */
+.result-group p {
+    margin: 5px 0;
+    font-size: 15px;
+}
