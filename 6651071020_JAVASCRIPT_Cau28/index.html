@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JS DOM paragraph style</title>
+<script>
+    function js_style() {
+        // Lấy phần tử HTML có id là 'text'
+        var textElement = document.getElementById('text');
+        
+        // Cập nhật các thuộc tính định dạng CSS
+        textElement.style.fontSize = "24px";
+        textElement.style.fontFamily = "Arial";
+        textElement.style.color = "red";
+    }
+</script>
+</head>
+<body>
+<p id='text'>JavaScript Exercises w3resource</p>
+<div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Display a random image.</title>
+<style type="text/css">
+body {margin-top: 30px;}
+</style>
+<script>
+    function display_random_image() {
+        // Mảng chứa danh sách 3 hình ảnh với đường dẫn và kích thước tương ứng
+        var images = [
+            {
+                src: "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+                width: 240,
+                height: 160
+            },
+            {
+                src: "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+                width: 320,
+                height: 195
+            },
+            {
+                src: "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
+                width: 500,
+                height: 343
+            }
+        ];
+
+        // Dùng Math.random() để chọn một số ngẫu nhiên từ 0 đến 2
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var selectedImg = images[randomIndex];
+
+        // Lấy thẻ div làm nơi chứa ảnh hiển thị
+        var container = document.getElementById("imageContainer");
+        
+        // Làm rỗng nội dung container để xóa ảnh cũ (nếu có) khi nhấn nút nhiều lần
+        container.innerHTML = "";
+
+        // Tạo phần tử <img> mới và gán các thuộc tính src, width, height
+        var imgElement = document.createElement("img");
+        imgElement.src = selectedImg.src;
+        imgElement.width = selectedImg.width;
+        imgElement.height = selectedImg.height;
+
+        // Chèn ảnh mới tạo vào bên trong thẻ div container
+        container.appendChild(imgElement);
+    }
+</script>
+</head>
+<body>
+<div>
+<!-- Gọi hàm display_random_image() khi xảy ra sự kiện onclick -->
+<button id="jsstyle" onclick="display_random_image();">Show Image</button>
+</div>
+<br>
+<!-- Thêm vùng chứa này để hiển thị ảnh trực tiếp trên trang web -->
+<div id="imageContainer"></div>
+</body>
+</html>
